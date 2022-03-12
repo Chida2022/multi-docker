@@ -14,7 +14,7 @@ after_success:
   - docker build -t dockerlearn1234/multi-client ./client
   - docker build -t dockerlearn1234/multi-nginx ./nginx
   - docker build -t dockerlearn1234/multi-server ./server
-  - docker-build -t dockerlearn1234/multi-worker ./worker
+  - docker build -t dockerlearn1234/multi-worker ./worker
   #login to the docker cli
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --passowrd-stdin
   #Take those images and push them to docker hub
